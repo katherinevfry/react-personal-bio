@@ -1,10 +1,15 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import firebase from 'firebase/app';
 import ReactDOM from 'react-dom';
+import firebaseConfig from './helpers/apiKeys';
 import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.Fragment>

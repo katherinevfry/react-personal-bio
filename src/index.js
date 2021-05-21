@@ -3,16 +3,16 @@ import React from 'react';
 import firebase from 'firebase/app';
 import ReactDOM from 'react-dom';
 import firebaseConfig from './helpers/apiKeys';
-import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import GlobalStyle from './styles/globalStyles';
 
 firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.Fragment>
+    <GlobalStyle />
     <App />
   </React.Fragment>,
   document.getElementById('root')

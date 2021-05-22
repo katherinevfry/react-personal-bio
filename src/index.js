@@ -1,6 +1,5 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import firebase from 'firebase/app';
+import firebase from 'firebase';
 import ReactDOM from 'react-dom';
 import firebaseConfig from './helpers/apiKeys';
 import App from './App';

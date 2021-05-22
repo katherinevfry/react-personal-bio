@@ -1,24 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
+import AuthedView from '../views/AuthedView';
 import Home from '../views/Home';
 import Projects from '../views/Projects';
 import Technologies from '../views/Technologies';
-// import PropTypes from 'prop-types';
 
-// const PrivateRoute = ({ component: Component, user, ...rest }) => {
-//   const routeChecker = (taco) => (user
-//     ? (<Component {...taco} user={user} />)
+// const AuthedRoute = ({ component: Component, admin, ...rest }) => {
+//   const routeChecker = (taco) => (admin
+//     ? (<Component {...taco} admin={admin} />)
 //     : (<Redirect to={{ pathname: '/', state: { from: taco.location } }} />));
 
 //   return <Route {...rest} render={(props) => routeChecker(props)} />;
 // };
 
-// PrivateRoute.propTypes = {
+// AuthedRoute.propTypes = {
 //   component: PropTypes.func,
-//   user: PropTypes.any
+//   admin: PropTypes.any
 // };
 
-export default function Routes() {
+export default function Routes({ user, admin }) {
   return (
     <div>
       <Switch>
@@ -30,20 +31,24 @@ export default function Routes() {
         <Route
         exact
         path='/projects'
-        component={Projects}
+        component={() => <Projects admin={admin}/>}
         />
         <Route
         exact
         path='/technologies'
         component={Technologies}
         />
+        <Route
+        exact
+        path='/authed'
+        component={() => <AuthedView user={user}/>}
+        />
       </Switch>
     </div>
   );
 }
 
-// Routes.propTypes = {
-//   players: PropTypes.array,
-//   setPlayers: PropTypes.func,
-//   user: PropTypes.any
-// };
+Routes.propTypes = {
+  user: PropTypes.any,
+  admin: PropTypes.any
+};

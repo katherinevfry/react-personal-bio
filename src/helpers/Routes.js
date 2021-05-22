@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from '../components/Home';
+import Home from '../views/Home';
+import Projects from '../views/Projects';
+import Technologies from '../views/Technologies';
 // import PropTypes from 'prop-types';
 
 // const PrivateRoute = ({ component: Component, user, ...rest }) => {
@@ -24,6 +26,16 @@ export default function Routes() {
         exact
         path='/'
         component={Home}
+        />
+        <Route
+        exact
+        path='/projects'
+        component={Projects}
+        />
+        <Route
+        exact
+        path='/technologies'
+        component={Technologies}
         />
       </Switch>
     </div>

@@ -10,15 +10,22 @@ export default function Projects({ admin }) {
     getProjects().then((resp) => setProjects(resp));
   }, []);
 
+  const titleStyle = {
+    marginTop: '65px',
+    marginLeft: '20px'
+  };
+
   const cardContainer = {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
+    marginLeft: '20px',
+    marginRight: '20px',
   };
 
   return (
     <div>
-      <h1>Projects</h1>
+      <h1 style={titleStyle}>Projects</h1>
       <div style={cardContainer}>
         {projects.map((project) => (
           <ProjectCard

@@ -12,8 +12,20 @@ import {
 const navStyle = {
   backgroundColor: '#fffbf0',
   borderBottomLeftRadius: '25px',
-  borderBottomRightRadius: '25px'
+  borderBottomRightRadius: '25px',
+  position: 'fixed',
+  top: '0',
+  width: '100%',
+  zIndex: '5',
+  marginLeft: '20px',
+  marginRight: '20px'
 };
+
+// const sticky = {
+//   position: 'fixed',
+//   top: '0',
+//   width: '100%'
+// };
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

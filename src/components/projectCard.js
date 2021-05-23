@@ -1,20 +1,27 @@
 import React, { useState } from 'react';
 import {
   Button,
-  Card, CardBody, CardImg, CardText, CardTitle
+  Card, CardBody, CardImg
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteProject } from '../helpers/data/projectsData';
 import ProjectForm from './ProjectForm';
+import ModalPop from './Modal';
 
 const cardStyle = {
-  width: '25rem',
+  width: '20rem',
   backgroundColor: '#fffbf0',
-  margin: '10px'
+  margin: '10px',
+  cursor: 'pointer',
+  border: 'none'
 };
 
 export default function ProjectCard({ admin, setProjects, ...project }) {
   const [editing, setEditing] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal((prevState) => !prevState);
+  };
   const handleClick = (type) => {
     switch (type) {
       case 'delete':
@@ -31,14 +38,8 @@ export default function ProjectCard({ admin, setProjects, ...project }) {
   return (
     <div>
       <Card style={cardStyle}>
-        <CardImg src={project.screenshot}></CardImg>
+        <CardImg onClick={openModal} src={project.screenshot}></CardImg>
         <CardBody>
-          <CardTitle>{project.title}</CardTitle>
-          <CardText>{project.description}</CardText>
-          <CardText>{project.technologiesUsed}</CardText>
-          <a href={project.githubUrl}>Github</a>
-          <br></br>
-          <a href={project.url}>Deployed Project</a>
           {
             admin && <div>
             <Button onClick={() => handleClick('delete')}>Delete Project</Button>
@@ -53,6 +54,7 @@ export default function ProjectCard({ admin, setProjects, ...project }) {
           }
         </CardBody>
       </Card>
+      <ModalPop showModal={showModal} setShowModal={setShowModal} {...project}/>
     </div>
   );
 }

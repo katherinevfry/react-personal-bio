@@ -4,6 +4,7 @@ import gradientbg from '../assets/gradientbg.jpg';
 import katyvfry from '../assets/katyvfry.png';
 import katypic from '../assets/katypic.png';
 import Bio from '../components/Bio';
+import Projects from './Projects';
 
 const HeroDiv = styled.div`
 background-image: url(${gradientbg});
@@ -14,8 +15,10 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-width: 96vw;
-margin: 20px;
+width: 96%;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 65px;
 border-radius: 25px;
 `;
 
@@ -34,6 +37,7 @@ export default function Home() {
         <img src={katypic} style={imgStyle}></img>
       </HeroDiv>
       <Bio />
+      <Projects />
     </div>
   );
 }

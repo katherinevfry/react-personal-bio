@@ -5,6 +5,7 @@ import katyvfry from '../assets/katyvfry.png';
 import katypic from '../assets/katypic.png';
 import Bio from '../components/Bio';
 import Projects from './Projects';
+import Technologies from './Technologies';
 
 const HeroDiv = styled.div`
 background-image: url(${gradientbg});
@@ -38,6 +39,7 @@ export default function Home() {
       </HeroDiv>
       <Bio />
       <Projects />
+      <Technologies />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import {
   Collapse,
   Navbar,
@@ -8,6 +9,7 @@ import {
   Nav,
   NavItem,
 } from 'reactstrap';
+import { Link as ScrollLink } from 'react-scroll';
 
 const navStyle = {
   backgroundColor: '#fffbf0',
@@ -21,13 +23,7 @@ const navStyle = {
   marginRight: '20px'
 };
 
-// const sticky = {
-//   position: 'fixed',
-//   top: '0',
-//   width: '100%'
-// };
-
-const NavBar = () => {
+const NavBar = ({ admin }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -40,16 +36,25 @@ const NavBar = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <Link className="nav-link" to="/projects">Projects</Link>
+              <ScrollLink className="nav-link" to="projects">Projects</ScrollLink>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/technologies">Technologies</Link>
+              <ScrollLink className="nav-link" to="technologies">Technologies</ScrollLink>
             </NavItem>
+            {
+              admin && <NavItem>
+              <Link to='/projects'>Auth Projects</Link>
+            </NavItem>
+            }
           </Nav>
         </Collapse>
       </Navbar>
     </div>
   );
+};
+
+NavBar.propTypes = {
+  admin: PropTypes.any
 };
 
 export default NavBar;

@@ -25,7 +25,7 @@ const iconStyle = {
 
 export default function Technologies() {
   return (
-    <div style={techStyle}>
+    <div id='technologies' style={techStyle}>
       <h1>Technologies</h1>
       <Marquee pauseOnHover='true' gradientColor={[255, 251, 240]} speed={20}>
         <img style={iconStyle} src={img1} alt=''/>

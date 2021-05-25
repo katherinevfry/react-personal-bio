@@ -24,7 +24,7 @@ export default function App() {
   return (
     <div>
       <Router>
-        <NavBar />
+        <NavBar admin={admin}/>
           <Routes user={loggedInUser}
           admin={admin}
           />

@@ -3,9 +3,12 @@ import propTypes from 'prop-types';
 import { Button } from 'reactstrap';
 import { signInUser, signOutUser } from '../helpers/auth';
 
+const styledBtn = {
+  marginTop: '65px'
+};
 export default function AuthedView({ user }) {
   return (
-    <div>
+    <div style={styledBtn}>
         {
           user
             ? <Button id="logOutBtn" onClick={signOutUser}>Sign Out</Button>

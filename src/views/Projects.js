@@ -24,7 +24,7 @@ export default function Projects({ admin }) {
   };
 
   return (
-    <div>
+    <div id='projects'>
       <h1 style={titleStyle}>Projects</h1>
       <div style={cardContainer}>
         {projects.map((project) => (

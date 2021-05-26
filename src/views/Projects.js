@@ -4,28 +4,36 @@ import ProjectCard from '../components/projectCard';
 import { getProjects } from '../helpers/data/projectsData';
 import ProjectForm from '../components/ProjectForm';
 
+const titleStyle = {
+  textAlign: 'center',
+  padding: '30px',
+  color: '#333811'
+};
+
+const cardContainer = {
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  alignItems: 'center',
+  justifyContent: 'center',
+  paddingBottom: '30px'
+};
+
+const projectSection = {
+  width: '96%',
+  backgroundColor: '#f8ad97',
+  margin: '0 auto'
+};
+
 export default function Projects({ admin }) {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     getProjects().then((resp) => setProjects(resp));
   }, []);
 
-  const titleStyle = {
-    marginTop: '65px',
-    marginLeft: '20px'
-  };
-
-  const cardContainer = {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    marginLeft: '20px',
-    marginRight: '20px',
-  };
-
   return (
-    <div id='projects'>
-      <h1 style={titleStyle}>Projects</h1>
+    <div id='projects' style={projectSection}>
+      <h1 style={titleStyle}>projects</h1>
       <div style={cardContainer}>
         {projects.map((project) => (
           <ProjectCard

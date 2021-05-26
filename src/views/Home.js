@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import gradientbg from '../assets/gradientbg.jpg';
+// import gradientbg from '../assets/gradientbg.jpg';
+// import herobkg from '../assets/herobkg.jpg';
+import floral from '../assets/floralflipped.jpg';
 import katyvfry from '../assets/katyvfry.png';
 import katypic from '../assets/katypic.png';
 import Bio from '../components/Bio';
@@ -9,7 +11,7 @@ import Technologies from './Technologies';
 import Footer from '../components/Footer';
 
 const HeroDiv = styled.div`
-background-image: url(${gradientbg});
+background-image: url(${floral});
 background-size: cover;
 background-attachment: fixed;
 display: flex;
@@ -18,10 +20,10 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 width: 96%;
-margin-left: 20px;
-margin-right: 20px;
+margin: 0 auto;
 margin-top: 65px;
-border-radius: 25px;
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
 `;
 
 const imgStyle = {

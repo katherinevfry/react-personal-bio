@@ -16,18 +16,25 @@ import img13 from '../assets/13.png';
 import img14 from '../assets/14.png';
 
 const techStyle = {
-  marginTop: '65px'
+  textAlign: 'center',
+  backgroundColor: '#080704',
+  width: '96%',
+  margin: '0 auto'
 };
 
 const iconStyle = {
   margin: '30px'
 };
 
+const headerColor = {
+  color: '#eac5ba'
+};
+
 export default function Technologies() {
   return (
     <div id='technologies' style={techStyle}>
-      <h1>Technologies</h1>
-      <Marquee pauseOnHover='true' gradientColor={[255, 251, 240]} speed={20}>
+      <h1 style={headerColor}>technologies</h1>
+      <Marquee pauseOnHover='true' gradientColor={[8, 7, 4]} speed={20}>
         <img style={iconStyle} src={img1} alt=''/>
         <img style={iconStyle} src={img2} alt=''/>
         <img style={iconStyle} src={img3} alt=''/>

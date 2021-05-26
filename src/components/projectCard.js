@@ -16,6 +16,13 @@ const cardStyle = {
   border: 'none'
 };
 
+const btnLink = {
+  textAlign: 'center',
+  fontFamily: ['bookmania', 'serif'],
+  fontWeight: '700',
+  fontStyle: 'italic'
+};
+
 export default function ProjectCard({ admin, setProjects, ...project }) {
   const [editing, setEditing] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -38,7 +45,7 @@ export default function ProjectCard({ admin, setProjects, ...project }) {
   return (
     <div>
       <Card style={cardStyle}>
-        <CardImg onClick={openModal} src={project.screenshot}></CardImg>
+        <CardImg src={project.screenshot}></CardImg>
         <CardBody>
           {
             admin && <div>
@@ -53,6 +60,7 @@ export default function ProjectCard({ admin, setProjects, ...project }) {
             </div>
           }
         </CardBody>
+        <h6 style={btnLink} onClick={openModal}>learn more</h6>
       </Card>
       <ModalPop showModal={showModal} setShowModal={setShowModal} {...project}/>
     </div>

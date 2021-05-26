@@ -7,11 +7,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: #fffbf0;
-    font-family: bookmania, serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 20px;
   }
+
+  h1 {
+    font-family: swear-display, serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+
 `;
 
 export default GlobalStyle;

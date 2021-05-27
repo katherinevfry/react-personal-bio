@@ -1,15 +1,15 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import {
   Modal, ModalBody, ModalFooter, ModalHeader
 } from 'reactstrap';
 
-const modalImg = {
-  width: '30rem',
-  objectFit: 'cover',
-  margin: '0',
-};
+const ModalImg = styled.img`
+  width: 27rem;
+  object-fit: cover;
+  margin: 0;
+`;
 
 export default function ModalPop({ showModal, setShowModal, ...project }) {
   const toggle = () => setShowModal(!showModal);
@@ -18,7 +18,7 @@ export default function ModalPop({ showModal, setShowModal, ...project }) {
       {showModal && <Modal isOpen={showModal} toggle={toggle}>
         <ModalHeader toggle={toggle}>{project.title}</ModalHeader>
         <ModalBody>
-          <img style={modalImg} src={project.screenshot}></img>
+          <ModalImg src={project.screenshot}></ModalImg>
           <p>{project.description}</p>
           <p>{project.technologiesUsed}</p>
         </ModalBody>

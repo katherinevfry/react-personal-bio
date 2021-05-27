@@ -1,6 +1,53 @@
+
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import 'variables';
 
 body {
   background-color: #fffbf0;
+}
+
+#navStyle {
+  background-color: #fffbf0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 0;
+}
+
+#imgStyle  {
+  width: 160px;
+  cursor: pointer;
+}
+
+#techStyle {
+  width: 160px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+#cardStyle {
+  width: 20rem;
+  background-color: #f7f3e7;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+#btnLink {
+  text-align: center;
+  font-family: bookmania serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#contactList {
+  list-style: none;
+  font-size: 20px;
+}
+
+#navLink {
+  color: #f7f3e7 !important;
 }

@@ -8,21 +8,6 @@ import { deleteProject } from '../helpers/data/projectsData';
 import ProjectForm from './ProjectForm';
 import ModalPop from './Modal';
 
-const cardStyle = {
-  width: '20rem',
-  backgroundColor: '#fffbf0',
-  margin: '10px',
-  cursor: 'pointer',
-  border: 'none'
-};
-
-const btnLink = {
-  textAlign: 'center',
-  fontFamily: ['bookmania', 'serif'],
-  fontWeight: '700',
-  fontStyle: 'italic'
-};
-
 export default function ProjectCard({ admin, setProjects, ...project }) {
   const [editing, setEditing] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -44,7 +29,7 @@ export default function ProjectCard({ admin, setProjects, ...project }) {
   };
   return (
     <div>
-      <Card style={cardStyle}>
+      <Card id='cardStyle'>
         <CardImg src={project.screenshot}></CardImg>
         <CardBody>
           {
@@ -60,7 +45,7 @@ export default function ProjectCard({ admin, setProjects, ...project }) {
             </div>
           }
         </CardBody>
-        <h6 style={btnLink} onClick={openModal}>learn more</h6>
+        <h6 id='btnLink' onClick={openModal}>learn more</h6>
       </Card>
       <ModalPop showModal={showModal} setShowModal={setShowModal} {...project}/>
     </div>

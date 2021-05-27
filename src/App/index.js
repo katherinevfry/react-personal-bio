@@ -3,7 +3,7 @@ import firebase from 'firebase';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Routes from '../helpers/Routes';
-import './App.scss';
+import '../styles/index.scss';
 
 export default function App() {
   const [admin, setAdmin] = useState(null);

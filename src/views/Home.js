@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-// import gradientbg from '../assets/gradientbg.jpg';
-// import herobkg from '../assets/herobkg.jpg';
 import floral from '../assets/floralflipped.jpg';
 import katyvfry from '../assets/katyvfry.png';
-import katypic from '../assets/katypic.png';
 import Bio from '../components/Bio';
 import Projects from './Projects';
 import Technologies from './Technologies';
@@ -24,21 +21,16 @@ margin: 0 auto;
 margin-top: 65px;
 border-top-right-radius: 25px;
 border-top-left-radius: 25px;
+@media only screen and (max-width: 600px) {
+  background-size: fit;
+}
 `;
-
-const imgStyle = {
-  width: '40%',
-  height: '40%',
-  margin: '20px',
-  borderRadius: '25px'
-};
 
 export default function Home() {
   return (
     <div>
       <HeroDiv>
         <img src={katyvfry} width='40%' margin='20px'></img>
-        <img src={katypic} style={imgStyle}></img>
       </HeroDiv>
       <Bio />
       <Projects />

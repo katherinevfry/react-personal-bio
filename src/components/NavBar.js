@@ -14,29 +14,6 @@ import katyfry from '../assets/katyfrynav.png';
 import proj from '../assets/proj.png';
 import tech from '../assets/tech.png';
 
-const navStyle = {
-  backgroundColor: '#fffbf0',
-  borderBottomLeftRadius: '25px',
-  borderBottomRightRadius: '25px',
-  position: 'fixed',
-  margin: ['0', 'auto'],
-  top: '0',
-  width: '100%',
-  zIndex: '5',
-  padding: '0'
-};
-
-const imgStyle = {
-  width: '160px',
-  cursor: 'pointer'
-};
-
-const techStyle = {
-  width: '160px',
-  cursor: 'pointer',
-  marginLeft: '25px'
-};
-
 const NavBar = ({ admin }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,16 +21,16 @@ const NavBar = ({ admin }) => {
 
   return (
     <div>
-      <Navbar style={navStyle} light expand="md">
-        <NavbarBrand href="/"><img src={katyfry} alt='katy fry' style={imgStyle}/></NavbarBrand>
+      <Navbar id='navStyle' light expand="md">
+        <NavbarBrand href="/"><img src={katyfry} alt='katy fry' id='imgStyle'/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <ScrollLink className="nav-link" to="projects"><img src={proj} alt='projects' style={imgStyle}/></ScrollLink>
+              <ScrollLink className="nav-link" to="projects"><img src={proj} alt='projects' id='imgStyle'/></ScrollLink>
             </NavItem>
             <NavItem>
-              <ScrollLink className="nav-link" to="technologies"><img src={tech} alt='technologies' style={techStyle}/></ScrollLink>
+              <ScrollLink className="nav-link" to="technologies"><img src={tech} alt='technologies' id='techStyle'/></ScrollLink>
             </NavItem>
             {
               admin && <NavItem>

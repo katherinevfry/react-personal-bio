@@ -41,6 +41,14 @@ body {
   font-family: bookmania serif;
   font-weight: 700;
   font-style: italic;
+  color: #333811;
+  background-color: transparent;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+#btnLink:hover {
+  background-color: #f5d5cf;
 }
 
 #contactList {
@@ -50,4 +58,17 @@ body {
 
 #navLink {
   color: #f7f3e7 !important;
+}
+
+#logoImg {
+  width: 40vw;
+  margin: 10px;
+  @media only screen and (max-width: 600px) {
+    width: 60vw;
+  }
+}
+
+#modal {
+  text-align: center;
+  margin: 0 auto;
 }

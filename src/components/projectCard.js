@@ -45,7 +45,7 @@ export default function ProjectCard({ admin, setProjects, ...project }) {
             </div>
           }
         </CardBody>
-        <h6 id='btnLink' onClick={openModal}>learn more</h6>
+        <Button id='btnLink' className='btn btn-outline' onClick={openModal}>learn more</Button>
       </Card>
       <ModalPop showModal={showModal} setShowModal={setShowModal} {...project}/>
     </div>

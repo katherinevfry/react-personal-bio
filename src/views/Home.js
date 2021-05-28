@@ -22,7 +22,7 @@ margin-top: 65px;
 border-top-right-radius: 25px;
 border-top-left-radius: 25px;
 @media only screen and (max-width: 600px) {
-  background-size: fit;
+  height: 90vh;
 }
 `;
 
@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <HeroDiv>
-        <img src={katyvfry} width='40%' margin='20px'></img>
+        <img id='logoImg' src={katyvfry}></img>
       </HeroDiv>
       <Bio />
       <Projects />

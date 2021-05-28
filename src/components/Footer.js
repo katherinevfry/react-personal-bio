@@ -30,12 +30,7 @@ export default function Footer() {
         <h1>contact me</h1>
         <ContactDiv>
           <ul id='contactList'>
-            <li><i className="fas fa-phone-square-alt"></i> (417) 718-7977</li>
             <li><i className="far fa-envelope"></i> katyvfry@gmail.com</li>
-          </ul>
-        </ContactDiv>
-        <ContactDiv>
-          <ul id='contactList'>
             <li><i className="fab fa-github"></i><a id='navLink' href='https://github.com/katherinevfry'> github</a></li>
             <li><i className="fab fa-instagram"></i><a id='navLink' href='https://www.instagram.com/katherinevfry/'> instagram</a></li>
             <li><i className="fab fa-linkedin"></i><a id='navLink' href='https://www.linkedin.com/in/katherine-fry/'> linkedin</a></li>

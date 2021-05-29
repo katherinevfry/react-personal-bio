@@ -23,6 +23,7 @@ border-top-right-radius: 25px;
 border-top-left-radius: 25px;
 @media only screen and (max-width: 600px) {
   height: 90vh;
+  backgound-size: contain;
 }
 `;
 

@@ -61,14 +61,15 @@ body {
 }
 
 #logoImg {
-  width: 40vw;
+  width: 60vw;
   margin: 10px;
   @media only screen and (max-width: 600px) {
-    width: 60vw;
+    width: 90vw;
   }
 }
 
 #modal {
   text-align: center;
   margin: 0 auto;
+  background-color: #f7f3e7;
 }

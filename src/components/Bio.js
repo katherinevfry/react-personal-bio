@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import katypic from '../assets/katypic.png';
 
 const BioDiv = styled.div`
-background-color: #333811;
+background-color: #828572;
 background-attachment: fixed;
 width: 96%;
 margin: 0 auto;

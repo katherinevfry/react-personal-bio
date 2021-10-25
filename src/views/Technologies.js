@@ -1,58 +1,83 @@
 import React from 'react';
-import Marquee from 'react-fast-marquee';
+// import Marquee from 'react-fast-marquee';
 import styled from 'styled-components';
-import img1 from '../assets/1.png';
-import img2 from '../assets/2.png';
-import img3 from '../assets/3.png';
-import img4 from '../assets/4.png';
-import img5 from '../assets/5.png';
-import img6 from '../assets/6.png';
-import img7 from '../assets/7.png';
-import img8 from '../assets/8.png';
-import img9 from '../assets/9.png';
-import img10 from '../assets/10.png';
-import img11 from '../assets/11.png';
-import img12 from '../assets/12.png';
-import img13 from '../assets/13.png';
-import img14 from '../assets/14.png';
+import {
+  FaReact,
+  FaHtml5
+} from 'react-icons/fa';
+import {
+  SiJavascript,
+  SiTailwindcss,
+  SiSass,
+  SiNextDotJs,
+  SiStorybook,
+  SiCsharp,
+  SiDotNet,
+  SiBugsnag,
+  SiStyledComponents,
+  SiPostman,
+  SiFirebase,
+  SiFigma,
+  SiCanva,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiNetlify,
+  SiMysql,
+  SiGithub
+} from 'react-icons/si';
 
 const TechStyle = styled.div`
   text-align: center;
-  background-color: #f5d5cf;
+  background-color: #c5884d;
   width: 96%;
   margin: 0 auto;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 `;
 
-const Icon = styled.img`
-  margin: 30px;
+const Icon = styled.h2`
+  font-size: 5rem;
+  margin: 20px;
+  color: #fffbf0;
 `;
 
 const Header = styled.h1`
-  color: #333811;
+  color: #fffbf0;
+`;
+
+const Container = styled.div`
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+width: 96%;
 `;
 
 export default function Technologies() {
   return (
     <TechStyle id='technologies'>
       <Header>technologies</Header>
-      <Marquee pauseOnHover='true' gradientColor={[245, 213, 207]} speed={20}>
-        <Icon src={img1} alt=''/>
-        <Icon src={img2} alt=''/>
-        <Icon src={img3} alt=''/>
-        <Icon src={img4} alt=''/>
-        <Icon src={img5} alt=''/>
-        <Icon src={img6} alt=''/>
-        <Icon src={img7} alt=''/>
-        <Icon src={img8} alt=''/>
-        <Icon src={img9} alt=''/>
-        <Icon src={img10} alt=''/>
-        <Icon src={img11} alt=''/>
-        <Icon src={img12} alt=''/>
-        <Icon src={img13} alt=''/>
-        <Icon src={img14} alt=''/>
-      </Marquee>
+      <Container>
+        <Icon> <FaReact /> </Icon>
+        <Icon> <SiJavascript /> </Icon>
+        <Icon> <SiTailwindcss /> </Icon>
+        <Icon> <SiSass /> </Icon>
+        <Icon> <SiNextDotJs /> </Icon>
+        <Icon> <SiStorybook /> </Icon>
+        <Icon> <SiCsharp /> </Icon>
+        <Icon> <SiDotNet /> </Icon>
+        <Icon> <SiBugsnag /> </Icon>
+        <Icon> <SiStyledComponents /> </Icon>
+        <Icon> <FaHtml5 /> </Icon>
+        <Icon> <SiPostman /> </Icon>
+        <Icon> <SiFirebase /> </Icon>
+        <Icon> <SiFigma /> </Icon>
+        <Icon> <SiCanva /> </Icon>
+        <Icon> <SiAdobephotoshop /></Icon>
+        <Icon> <SiAdobeillustrator /> </Icon>
+        <Icon> <SiNetlify /> </Icon>
+        <Icon> <SiMysql /></Icon>
+        <Icon> <SiGithub /> </Icon>
+      </Container>
     </TechStyle>
   );
 }

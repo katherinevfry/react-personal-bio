@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import floralflipped from '../assets/floralflipped.jpg';
+import otherBg from '../assets/otherBg.jpg';
 
 const FooterDiv = styled.div`
-background-image: url(${floralflipped});
+background-image: url(${otherBg});
 background-size: cover;
 display: flex;
 flex-direction: row;

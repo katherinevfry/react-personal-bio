@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import floral from '../assets/floralflipped.jpg';
-import katyvfry from '../assets/katyvfry.png';
+import otherBg from '../assets/otherBg.jpg';
+import newLogo from '../assets/newLogo.png';
 import Bio from '../components/Bio';
 import Projects from './Projects';
 import Technologies from './Technologies';
 import Footer from '../components/Footer';
 
 const HeroDiv = styled.div`
-background-image: url(${floral});
+background-image: url(${otherBg});
 background-size: cover;
 background-attachment: fixed;
 display: flex;
@@ -17,6 +17,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 width: 96%;
+height: 40rem;
 margin: 0 auto;
 margin-top: 65px;
 border-top-right-radius: 25px;
@@ -31,7 +32,7 @@ export default function Home() {
   return (
     <div>
       <HeroDiv>
-        <img id='logoImg' src={katyvfry}></img>
+        <img id='logoImg' src={newLogo}></img>
       </HeroDiv>
       <Bio />
       <Projects />

@@ -12,7 +12,7 @@ import {
   SiNextDotJs,
   SiStorybook,
   SiCsharp,
-  SiDotNet,
+  SiDotnet,
   SiBugsnag,
   SiStyledComponents,
   SiPostman,
@@ -64,7 +64,7 @@ export default function Technologies() {
         <Icon> <SiNextDotJs /> </Icon>
         <Icon> <SiStorybook /> </Icon>
         <Icon> <SiCsharp /> </Icon>
-        <Icon> <SiDotNet /> </Icon>
+        <Icon> <SiDotnet /> </Icon>
         <Icon> <SiBugsnag /> </Icon>
         <Icon> <SiStyledComponents /> </Icon>
         <Icon> <FaHtml5 /> </Icon>

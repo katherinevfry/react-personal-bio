@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import otherBg from '../assets/otherBg.jpg';
-import newLogo from '../assets/newLogo.png';
+import western from '../assets/western.jpg';
+import newLogo from '../assets/1.png';
 import Bio from '../components/Bio';
 import Projects from './Projects';
 import Technologies from './Technologies';
 import Footer from '../components/Footer';
 
 const HeroDiv = styled.div`
-background-image: url(${otherBg});
+background-image: url(${western});
 background-size: cover;
 background-attachment: fixed;
 display: flex;

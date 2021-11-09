@@ -9,12 +9,11 @@ import {
   SiJavascript,
   SiTailwindcss,
   SiSass,
-  SiNextDotJs,
+  SiNextdotjs,
   SiStorybook,
   SiCsharp,
-  SiDotNet,
+  SiDotnet,
   SiBugsnag,
-  SiStyledComponents,
   SiPostman,
   SiFirebase,
   SiFigma,
@@ -61,12 +60,11 @@ export default function Technologies() {
         <Icon> <SiJavascript /> </Icon>
         <Icon> <SiTailwindcss /> </Icon>
         <Icon> <SiSass /> </Icon>
-        <Icon> <SiNextDotJs /> </Icon>
+        <Icon> <SiNextdotjs /> </Icon>
         <Icon> <SiStorybook /> </Icon>
         <Icon> <SiCsharp /> </Icon>
-        <Icon> <SiDotNet /> </Icon>
+        <Icon> <SiDotnet /> </Icon>
         <Icon> <SiBugsnag /> </Icon>
-        <Icon> <SiStyledComponents /> </Icon>
         <Icon> <FaHtml5 /> </Icon>
         <Icon> <SiPostman /> </Icon>
         <Icon> <SiFirebase /> </Icon>

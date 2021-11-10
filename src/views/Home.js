@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import western from '../assets/western.jpg';
-import newLogo from '../assets/1.png';
+import newLogo from '../assets/newestBg.png';
 import Bio from '../components/Bio';
 import Projects from './Projects';
 import Technologies from './Technologies';
@@ -17,14 +17,14 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 width: 96%;
-height: 40rem;
+height: 30rem;
 margin: 0 auto;
 margin-top: 65px;
 border-top-right-radius: 25px;
 border-top-left-radius: 25px;
 @media only screen and (max-width: 600px) {
-  height: 90vh;
-  backgound-size: contain;
+  height: 60vh;
+  backgound-size: auto auto;
 }
 `;
 

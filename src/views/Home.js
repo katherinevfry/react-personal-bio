@@ -25,9 +25,6 @@ border-top-right-radius: 25px;
 border-top-left-radius: 25px;
 @media only screen and (max-width: 600px) {
   background-image: url(${mobileHeader});
-  height: 60vh;
-  backgound-size: auto auto;
-  background-attachment: none;
 }
 `;
 

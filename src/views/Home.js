@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import western from '../assets/western.jpg';
 import newLogo from '../assets/newestBg.png';
+import mobileHeader from '../assets/mobileHeader.png';
 import Bio from '../components/Bio';
 import Projects from './Projects';
 import Technologies from './Technologies';
@@ -23,6 +24,7 @@ margin-top: 65px;
 border-top-right-radius: 25px;
 border-top-left-radius: 25px;
 @media only screen and (max-width: 600px) {
+  background-image: url(${mobileHeader});
   height: 60vh;
   backgound-size: auto auto;
   background-attachment: none;

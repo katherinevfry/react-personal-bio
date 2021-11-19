@@ -30,6 +30,7 @@ border-top-left-radius: 25px;
   height: 90%;
   width: 96%;
   background-attachment: scroll;
+  background-size: auto;
 }
 `;
 

@@ -27,7 +27,10 @@ border-top-left-radius: 25px;
 @media only screen and (max-width: 600px) {
   background-image: url(${mobileHeader});
   background-position: center;
-  height: 80%;
+  height: 90%;
+  width: 96%;
+  background-attachment: scroll;
+  background-size: auto;
 }
 `;
 

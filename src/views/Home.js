@@ -12,6 +12,7 @@ const HeroDiv = styled.div`
 background-image: url(${western});
 background-size: cover;
 background-attachment: fixed;
+background-position: center
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -25,6 +26,8 @@ border-top-right-radius: 25px;
 border-top-left-radius: 25px;
 @media only screen and (max-width: 600px) {
   background-image: url(${mobileHeader});
+  background-position: center;
+  height: 80%;
 }
 `;
 
